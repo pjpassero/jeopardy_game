@@ -1,0 +1,80 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.modal-content {
+    height: 80%;
+    width: 90%;
+    margin:5%;
+    background-color: lightgray;
+    text-align: center;
+    color: blue;
+    overflow: auto;
+}
+
+.item {
+    height:14vh;
+    border-style: solid;
+}
+.item:hover {
+    background-color:rgba(0,0,0,0.4);
+    cursor:pointer;
+}
+.headerteams {
+    background-color: blue;
+    color:white;
+    font-weight:bold;
+    
+}
+.headerCols {
+    background-color: darkslategrey;
+    color:white;
+    height:75px;
+}
+.teamNameer {
+    width:15%;
+}
+
+#addTeam:hover {
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.disabled {
+    pointer-events: none;
+}
+.btn {
+    background-color:darkblue;
+    color:white;
+    font-weight:bold;
+}
+
+.conntected {
+    color:green;
+}
+.not {
+    color:red;
+}
+
+.right {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
+hr {
+    width:65%;
+}
+#continue:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
