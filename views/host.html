@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jeopardy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="clickerInit()">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <a id="question">Nothing Selected Yet!</a>
+        </div>
+        <div class="row justify-content-center">
+            <a id="answer">Nothing Selected Yet</a>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <a id="questionValue">$0</a>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <button class="btn btn-lg right mb-3" onclick="answerHost()">
+                Answer
+            </button>
+        </div>
+        <div class="row justify-content-center">
+            <button class="btn btn-lg" onclick="continueHost()">
+                Continue
+            </button>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h4> <a id="team1name">Team 1</a></h4>
+                <b><a id="team1value">$0</a></b> <br>
+                <button class="btn btn-lg right mb-3" onclick="correct(1)">Correct</button>
+                <button class="btn btn-lg wrong mb-3" onclick="wrong(1)">Incorrect</button>
+
+            </div>
+            <div class="col text-center">
+                <h4> <a id="team2name">Team 2</a></h4>
+                <b><a id="team2value">$0</a></b> <br>
+                <button class="btn btn-lg right mb-3" onclick="correct(2)">Correct</button>
+                <button class="btn btn-lg wrong mb-3" onclick="wrong(2)">Incorrect</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="enterCode">
+        <div class="modal-content" style="height:100%; width:100%; margin:0%;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <h3>Hey there, gotta code? Please enter it here!</h3>
+                    <form class="form-group">
+                        <input class="form-control" type="text" id="joinCode" placeholder="Code Here" />
+                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <p id="connectionStatus" class="not">Not connected</p>
+
+                </div>
+
+                <div class="row justify-content-center p-3">
+                    <button class="btn btn-lg" onclick="joinHost()">Join Game</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/json_parser.js"></script>
+    <script src="js/host.js"></script>
+    <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+
+
+    <script>
+        var socket = io('http://localhost:3000');
+        var socketid = '';
+        socket.on('socky', function (data) {
+            socketid = data.socketid;
+        });
+        socket.on('message', function (data) {
+            console.log(data);
+        })
+    </script>
+</body>
+
+</html>
