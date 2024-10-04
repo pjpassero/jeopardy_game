@@ -25,4 +25,9 @@
     <h3>/makegame</h3>
     <p>Navigate over to this page to build your own custom gameboard. You can designate categories, questions, and answers. Best part is that you can save your progress for future editing.</p>
   </li>
+    </li>
+    <li>
+    <h3>/clicker *COMING SOON*</h3>
+    <p>Scan your QR code or navigate to this page to use your device as a clicker! The big button will ring you in to answer the question! You gotta be quick!</p>
+  </li>
 </ul>
