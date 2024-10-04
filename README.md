@@ -8,3 +8,8 @@
 <h2>
   Features of the Game:
 </h2>
+<ul>
+  <li>Custom Game Board Builder & Editor</li>
+  <li>Host Site (Be like Alex Tribek or Ken Jennings!)</li>
+  <li>Indiviudal Team Clickers (COMING SOON!)</li>
+</ul>
