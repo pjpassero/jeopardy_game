@@ -31,3 +31,8 @@
     <p>Scan your QR code or navigate to this page to use your device as a clicker! The big button will ring you in to answer the question! You gotta be quick!</p>
   </li>
 </ul>
+<h2>Why?</h2>
+<p>
+  I built this game simply for fun back in high school. It actually was meant as a tool for a trivia night for my Boy Scout troop, but it never made it to its intended use. That's ok though because I built the app out and added some sweet features that I came up with during the development process. More important, it was a lot of fun to build!
+</p>
+
