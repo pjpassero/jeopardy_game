@@ -6,10 +6,23 @@
 </p>
 
 <h2>
-  Features of the Game:
+  Features of the Game Include:
 </h2>
 <ul>
   <li>Custom Game Board Builder & Editor</li>
-  <li>Host Site (Be like Alex Tribek or Ken Jennings!)</li>
+  <li>Host Site (Be like Alex Trebek or Ken Jennings!)</li>
   <li>Indiviudal Team Clickers (COMING SOON!)</li>
+  <li>QR Code Integration</li>
+</ul>
+
+<h2>Local Endpoints:</h2>
+<ul>
+  <li>
+    <h3>/host</h3>
+    <p>Navigate to this page to enter your unique game code to act as the host. Choose which teams earn or lose points. Pre-screen the questions along with answers</p>
+  </li>
+    <li>
+    <h3>/makegame</h3>
+    <p>Navigate over to this page to build your own custom gameboard. You can designate categories, questions, and answers. Best part is that you can save your progress for future editing.</p>
+  </li>
 </ul>
