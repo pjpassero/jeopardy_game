@@ -37,8 +37,14 @@
 </p>
 <h2>Technical</h2>
 <p>
-  The server creates a localhost server on a specificed port. The client-side application talks to the server via Socket.io sockets. Sockets are used to transfer key data to the server to make sure the game runs smoothly. Express.js is used alongside the built in HTTP libraries to give the server its functionality. Express in this case is really just used for smooth routing. I also liked how Express operates so I chose to continue to use it. 
+  The server creates a localhost server on a specificed port; in this case it is 3000, but you can set the port to whatever suits you. The client-side application talks to the server via websockets using Socket.io. Sockets are used to transfer key data to the server to make sure the game runs smoothly. Express.js is used alongside the built in HTTP libraries to give the server its functionality. Express in this case is really just used for smooth routing. I also liked how Express operates so I chose to continue to use it as the foundation for the server side application. 
 
-  The client-side app is designed using CSS. I used just CSS to practice responsive layout techniques that don't require the use of a library. Eventually I would like to update the design to make it more appealing using something like Bootstrap or React. On the client-side server aspect, 
+  The client-side app is designed using CSS. I used just CSS to practice responsive layout techniques that don't require the use of a library. Eventually I would like to update the design to make it more appealing using something like Bootstrap or React. On the technical side of the client-side application, the website brings in the Socket.io packages to use on the client-side. AJAX is used to manage all other request. I chose AJAX over the built in XHR handler because formatting functions to handle API endpoints was quite straight forward. I also liked the way the syntax looked, which I feel adds to the readability of the code. 
+
+  
 </p>
-
+<h2>The Future of the Game</h2>
+<p>
+  Obviously the code could use a lot of re-working, refactoring, redesigning, etc. Slowly, I would like to start integrating new features and design changes to the game, but right now they have to wait. I already see that certain areas contain redundancies that can be fixed. Certain aspects of the code could be redone to apply more efficient algorithms, but I always look back at when I built this and I'm proud of what this has become so far. 
+  
+</p>
