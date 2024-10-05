@@ -35,4 +35,10 @@
 <p>
   I built this game simply for fun back in high school. It actually was meant as a tool for a trivia night for my Boy Scout troop, but it never made it to its intended use. That's ok though because I built the app out and added some sweet features that I came up with during the development process. More important, it was a lot of fun to build!
 </p>
+<h2>Technical</h2>
+<p>
+  The server creates a localhost server on a specificed port. The client-side application talks to the server via Socket.io sockets. Sockets are used to transfer key data to the server to make sure the game runs smoothly. Express.js is used alongside the built in HTTP libraries to give the server its functionality. Express in this case is really just used for smooth routing. I also liked how Express operates so I chose to continue to use it. 
+
+  The client-side app is designed using CSS. I used just CSS to practice responsive layout techniques that don't require the use of a library. Eventually I would like to update the design to make it more appealing using something like Bootstrap or React. On the client-side server aspect, 
+</p>
 
