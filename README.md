@@ -43,6 +43,16 @@
 
   
 </p>
+<h2>Technical Continued (Required Dependencies) </h2
+
+<ul>
+  <li>Express.js</li>
+  <li>Consolidate</li>
+  <li>qrcode</li>
+  <li>socket.io &  socket.io-client</li>
+  
+</ul>
+
 <h2>The Future of the Game</h2>
 <p>
   Obviously the code could use a lot of re-working, refactoring, redesigning, etc. Slowly, I would like to start integrating new features and design changes to the game, but right now they have to wait. I already see that certain areas contain redundancies that can be fixed. Certain aspects of the code could be redone to apply more efficient algorithms, but I always look back at when I built this and I'm proud of what this has become so far. 
