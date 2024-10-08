@@ -19,7 +19,9 @@
 <ul>
   <li>
     <h3>/host</h3>
-    <p>Navigate to this page to enter your unique game code to act as the host. Choose which teams earn or lose points. Pre-screen the questions along with answers</p>
+    <p>Navigate to this page to enter your unique game code to act as the host. Choose which teams earn or lose points. Pre-screen the questions along with answers. Control the gameboard
+    from any local device. 
+    </p>
   </li>
     <li>
     <h3>/makegame</h3>
