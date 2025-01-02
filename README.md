@@ -10,7 +10,7 @@
 </h2>
 <ul>
   <li>Custom Game Board Builder & Editor</li>
-  <li>Host Site (Be like Alex Trebek or Ken Jennings!)</li>
+  <li>Host Site</li>
   <li>Indiviudal Team Clickers (COMING SOON!)</li>
   <li>QR Code Integration</li>
 </ul>
